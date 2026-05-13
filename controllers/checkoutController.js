@@ -2,7 +2,7 @@
 const { Order, OrderItem } = require('../models');
 
 // ── Base URL de la API de PayPal ─────────────────────────────────
-const PAYPAL_BASE = process.env.PAYPAL_MODE === 'production'
+const PAYPAL_BASE = process.env.PAYPAL_MODE === 'live'
   ? 'https://api-m.paypal.com'
   : 'https://api-m.sandbox.paypal.com';
 
